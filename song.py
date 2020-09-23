@@ -28,16 +28,10 @@ class Discography:
 
     def randomLyric(self):
         randomSong = random.choice(self.songs)
-
-        # pick a random song
-        # read the lyrics using splitline
         fileObj = open(randomSong.getLyricFile(), "r")
-
-        # fileObj = open("wonderland_lyrics.txt", "r")
         lyrics = fileObj.read().splitlines()
         fileObj.close()
         print("random song ", str(randomSong.getTitle()))
-        
         return random.choice(lyrics)
 
 class Song:
