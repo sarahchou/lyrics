@@ -130,6 +130,18 @@ def init_songs():
 
     #fearless songs
     fearless = Song("Fearless", album_fearless, 1, "discography/fearless/fearless_lyrics.txt")
+    fifteen = Song("Fifteen", album_fearless, 2, "discography/fearless/fifteen_lyrics.txt")
+    love_story = Song("Love Story", album_fearless, 3, "discography/fearless/love_story_lyrics.txt")
+    hey_stephen = Song("Hey Stephen", album_fearless, 4, "discography/fearless/hey_stephen_lyrics.txt")
+    white_horse = Song("White Horse", album_fearless, 5, "discography/fearless/white_horse_lyrics.txt")
+    you_belong_with_me = Song("You Belong With Me", album_fearless, 6, "discography/fearless/you_belong_with_me_lyrics.txt")
+    breathe = Song("Breathe", album_fearless, 7, "discography/fearless/breathe_lyrics.txt")
+    tell_me_why = Song("Tell Me Why", album_fearless, 8, "discography/fearless/tell_me_why_lyrics.txt")
+    youre_not_sorry = Song("You're Not Sorry", album_fearless, 9, "discography/fearless/youre_not_sorry_lyrics.txt")
+    the_way_i_loved_you = Song("The Way I Loved You", album_fearless, 10, "discography/fearless/the_way_i_loved_you_lyrics.txt")
+    forever_and_always = Song("Forever & Always", album_fearless,11, "discography/fearless/forever_and_always_lyrics.txt")
+    the_best_day = Song("The Best Day", album_fearless, 12, "discography/fearless/the_best_day_lyrics.txt")
+    change = Song("Change", album_fearless, 13, "discography/fearless/change_lyrics.txt")
 
     # speak now songs
     mine = Song("Mine", album_speaknow, 1, "discography/speaknow/mine_lyrics.txt")
@@ -147,6 +159,29 @@ def init_songs():
     last_kiss = Song("Last Kiss", album_speaknow, 13, "discography/speaknow/last_kiss_lyrics.txt")
     long_live = Song("Long Live", album_speaknow, 14, "discography/speaknow/long_live_lyrics.txt")
 
+    # red songs
+    state_of_grace = Song("State of Grace", album_red, 1, "discography/red/state_of_grace_lyrics.txt")
+    red = Song("Red", album_red, 2, "discography/red/red_lyrics.txt")
+    treacherous = Song("Treacherous", album_red, 3, "discography/red/treacherous_lyrics.txt")
+    i_knew_you_were_trouble = Song("I Knew You Were Trouble", album_red, 4, "discography/red/i_knew_you_were_trouble_lyrics.txt")
+    all_too_well = Song("All Too Well", album_red, 5, "discography/red/all_too_well_lyrics.txt")
+    _22 = Song("22", album_red, 6, "discography/red/22_lyrics.txt")
+    i_almost_do = Song("I Almost Do", album_red, 7, "discography/red/i_almost_do_lyrics.txt")
+    we_are_never_ever_getting_back_together = Song("We Are Never Ever Getting Back Together", album_red, 8, 
+    "discography/red/we_are_never_ever_getting_back_together_lyrics.txt")
+    stay_stay_stay = Song("Stay Stay Stay", album_red, 9, "discography/red/stay_stay_stay_lyrics.txt")
+    the_last_time = Song("The Last Time", album_red, 10, "discography/red/the_last_time_lyrics.txt")
+    holy_ground = Song("Holy Ground", album_red, 11, "discography/red/holy_ground_lyrics.txt")
+    sad_beautiful_tragic = Song("Sad Beautiful Tragic", album_red, 12, "discography/red/sad_beautiful_tragic_lyrics.txt")
+    the_lucky_one = Song("The Lucky One", album_red, 13, "discography/red/the_lucky_one_lyrics.txt")
+    everything_has_changed = Song("Everything Has Changed", album_red, 14, "discography/red/everything_has_changed_lyrics.txt")
+    starlight = Song("Starlight", album_red, 15, "discography/red/starlight_lyrics.txt")
+    begin_again = Song("Begin Again", album_red, 16, "discography/red/begin_again_lyrics.txt")
+    the_moment_i_knew = Song("The Moment I Knew", album_red, 17, "discography/red/the_moment_i_knew_lyrics.txt")
+    come_back_be_here = Song("Come Back...Be Here", album_red, 18, "discography/red/come_back_be_here_lyrics.txt")
+    girl_at_home = Song("Girl At Home", album_red, 19, "discography/red/girl_at_home_lyrics.txt")
+
+
 
 
 
@@ -158,14 +193,14 @@ def init_songs():
     wonderland = Song("Wonderland", album_1989, 5, "discography/1989/wonderland_lyrics.txt")
     new_romantics = Song("New Romantics", album_1989, 2, "discography/1989/new_romantics_lyrics.txt")
     wildest_dreams = Song("Wildest Dreams", album_1989, 1, "discography/1989/wildest_dreams_lyrics.txt")
-    red = Song("Red", album_red, 1, "discography/red/red_lyrics.txt")
 
 
     listofsongs = [wonderland, wildest_dreams, new_romantics, red, tim_mcgraw, picture_to_burn, teardrops_on_my_guitar,
     a_place_in_this_world, cold_as_you, the_outside, tied_together_with_a_smile, stay_beautiful, shouldve_said_no,
     marys_song, our_song, im_only_me_when_im_with_you, invisible, a_perfectly_good_heart, mine, sparks_fly, back_to_december,
     speak_now, dear_john, mean, the_story_of_us, never_grow_up, enchanted, better_than_revenge, innocent,
-    haunted, last_kiss, long_live]
+    haunted, last_kiss, long_live, fearless, fifteen, love_story, hey_stephen, white_horse, you_belong_with_me, breathe,
+    tell_me_why, youre_not_sorry, the_way_i_loved_you, forever_and_always, the_best_day, change]
     listofalbums = [album_taylorswift, album_fearless, album_speaknow, album_red, album_1989, album_reputation,
     album_lover, album_folklore]
     for s in listofsongs:
