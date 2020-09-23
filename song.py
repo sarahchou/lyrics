@@ -1,16 +1,23 @@
 import unittest, random
 class Discography:
-    def __init__(self, songs):
-        self.songs = songs
+    def __init__(self, albums):
+        self.albums = albums
     def numSongs(self):
-        return len(self.songs)
+        c = 0
+        for a in self.albums:
+            c += len(a.getSongs())
+        return c
     def getSongs(self):
-        return self.songs
+        arr = []
+        for a in self.albums:
+            for s in a.getSongs():
+                arr.append(s)
+        return arr
     def getSongsInAlbum(self, album):
         album_songs = []
-        for s in self.songs:
-            if s.getAlbum() == album:
-                album_songs.append(s)
+        for a in self.albums:
+            if a == album:
+                album_songs.append(a.getSongs())
         return album_songs
 
     def occursInAlbum(self, word, album):
@@ -21,18 +28,41 @@ class Discography:
         return num
     def occursInDiscography(self, word):
         num = 0
-        for s in self.songs:
+        for s in self.getSongs():
             num += s.occursInLyrics(word)
         print(word + " occurs in discography " + str(num) + " times")
         return num
 
     def randomLyric(self):
-        randomSong = random.choice(self.songs)
+        randomSong = random.choice(self.getSongs())
+        print("rando song title", randomSong.getTitle())
         fileObj = open(randomSong.getLyricFile(), "r")
         lyrics = fileObj.read().splitlines()
         fileObj.close()
         print("random song ", str(randomSong.getTitle()))
         return random.choice(lyrics)
+
+class Album:
+    def __init__(self, title, songs):
+        self.title = title
+        self.songs = songs
+    def getTitle(self):
+        return self.title
+    def numSongs(self):
+        return len(self.songs)
+
+    def getSongs(self):
+        return self.songs
+
+    def occursInAlbum(self, word):
+        num = 0
+        for song in self.getSongs():
+            num += song.occursInLyrics(word)
+        print(word + " occurs in " + self.title + " " + str(num) + " times")
+        return num
+    def addSongToAlbum(self, song):
+        if song.getAlbum() == self.title and song not in self.songs:
+            self.songs.append(song)
 
 class Song:
     
@@ -66,30 +96,27 @@ def readFile(fileName):
     fileObj.close()
     return lyrics
 
-# class Test(unittest.TestCase):
-#     wonderland = Song("Wonderland", "1989", 5, ["hi","there"])
-#     def test_lyrics(self):
-#         self.assertEqual("1989", wonderland.getAlbum())
-
 if __name__ == "__main__":
     wonderland = Song("Wonderland", "1989", 5, "wonderland_lyrics.txt")
     new_romantics = Song("New Romantics", "1989", 2, "new_romantics_lyrics.txt")
     wildest_dreams = Song("Wildest Dreams", "1989", 1, "wildest_dreams_lyrics.txt")
     red = Song("Red", "Red", 1, "red_lyrics.txt")
-    disc = Discography([wonderland, new_romantics, wildest_dreams, red])
+
+
+    album_red = Album("Red", [])
+    album_1989 = Album("1989", [])
+
+
+    listofsongs = [wonderland, wildest_dreams, new_romantics, red]
+    listofalbums = [album_1989, album_red]
+    for s in listofsongs:
+        for a in listofalbums:
+            a.addSongToAlbum(s)
+    disc = Discography([album_1989, album_red])
     print(disc.randomLyric())
     words = ["my", "and", "wonderland", "he", "wOndErlaNd", "rEd", "RED"]
     print(disc.occursInDiscography(random.choice(words)))
-    
-    # Test.test_lyrics()
-    # print(wonderland.album)
-    # print(wonderland.getLyrics())
-    # print(new_romantics.lyrics)
-    # print("wonderland occurs in " + wonderland.getTitle() + " " + str
-    # (wonderland.occursInLyrics("wonderland")) + " times")
-    # wonderland.occursInLyrics("wonderland")
-    # wonderland.occursInLyrics("a")
-    # new_romantics.occursInLyrics("a")
+    print(str(disc.numSongs()), "num songs")
 
 
 
