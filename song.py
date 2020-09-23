@@ -128,8 +128,32 @@ def init_songs():
     invisible = Song("Invisible", album_taylorswift, 13, "discography/taylorswift/invisible_lyrics.txt")
     a_perfectly_good_heart = Song("A Perfectly Good Heart", album_taylorswift, 14, "discography/taylorswift/a_perfectly_good_heart_lyrics.txt")
 
+    #fearless songs
+    fearless = Song("Fearless", album_fearless, 1, "discography/fearless/fearless_lyrics.txt")
+
     # speak now songs
-    
+    mine = Song("Mine", album_speaknow, 1, "discography/speaknow/mine_lyrics.txt")
+    sparks_fly = Song("Sparks Fly", album_speaknow, 2, "discography/speaknow/sparks_fly_lyrics.txt")
+    back_to_december = Song("Back to December", album_speaknow, 3, "discography/speaknow/back_to_december_lyrics.txt")
+    speak_now = Song("Speak Now", album_speaknow, 4, "discography/speaknow/speak_now_lyrics.txt")
+    dear_john = Song("Dear John", album_speaknow, 5, "discography/speaknow/dear_john_lyrics.txt")
+    mean = Song("Mean", album_speaknow,6, "discography/speaknow/mean_lyrics.txt")
+    the_story_of_us = Song("The Story of Us", album_speaknow, 7, "discography/speaknow/the_story_of_us_lyrics.txt")
+    never_grow_up = Song("Never Grow Up", album_speaknow, 8, "discography/speaknow/never_grow_up_lyrics.txt")
+    enchanted = Song("Enchanted", album_speaknow, 9, "discography/speaknow/enchanted_lyrics.txt")
+    better_than_revenge = Song("Better Than Revenge", album_speaknow, 10, "discography/speaknow/better_than_revenge_lyrics.txt")
+    innocent = Song("Innocent", album_speaknow, 11, "discography/speaknow/innocent_lyrics.txt")
+    haunted = Song("Haunted", album_speaknow,12, "discography/speaknow/haunted_lyrics.txt")
+    last_kiss = Song("Last Kiss", album_speaknow, 13, "discography/speaknow/last_kiss_lyrics.txt")
+    long_live = Song("Long Live", album_speaknow, 14, "discography/speaknow/long_live_lyrics.txt")
+
+
+
+
+
+
+
+
 
     wonderland = Song("Wonderland", album_1989, 5, "discography/1989/wonderland_lyrics.txt")
     new_romantics = Song("New Romantics", album_1989, 2, "discography/1989/new_romantics_lyrics.txt")
@@ -139,7 +163,9 @@ def init_songs():
 
     listofsongs = [wonderland, wildest_dreams, new_romantics, red, tim_mcgraw, picture_to_burn, teardrops_on_my_guitar,
     a_place_in_this_world, cold_as_you, the_outside, tied_together_with_a_smile, stay_beautiful, shouldve_said_no,
-    marys_song, our_song, im_only_me_when_im_with_you, invisible, a_perfectly_good_heart]
+    marys_song, our_song, im_only_me_when_im_with_you, invisible, a_perfectly_good_heart, mine, sparks_fly, back_to_december,
+    speak_now, dear_john, mean, the_story_of_us, never_grow_up, enchanted, better_than_revenge, innocent,
+    haunted, last_kiss, long_live]
     listofalbums = [album_taylorswift, album_fearless, album_speaknow, album_red, album_1989, album_reputation,
     album_lover, album_folklore]
     for s in listofsongs:
