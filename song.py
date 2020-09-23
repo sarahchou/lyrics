@@ -128,6 +128,8 @@ def init_songs():
     invisible = Song("Invisible", album_taylorswift, 13, "discography/taylorswift/invisible_lyrics.txt")
     a_perfectly_good_heart = Song("A Perfectly Good Heart", album_taylorswift, 14, "discography/taylorswift/a_perfectly_good_heart_lyrics.txt")
 
+    # speak now songs
+    
 
     wonderland = Song("Wonderland", album_1989, 5, "discography/1989/wonderland_lyrics.txt")
     new_romantics = Song("New Romantics", album_1989, 2, "discography/1989/new_romantics_lyrics.txt")
