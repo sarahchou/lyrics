@@ -15,7 +15,7 @@ class Discography:
 
     def occursInAlbum(self, word, album):
         num = 0
-        for song in self.getSongsInAlbum(album): #self
+        for song in self.getSongsInAlbum(album):
             num += song.occursInLyrics(word)
         print(word + " occurs in " + album + " " + str(num) + " times")
         return num
@@ -36,12 +36,11 @@ class Discography:
 
 class Song:
     
-    def __init__(self, title="", album="", track_num=0, lyric_file = "", lyrics=[]):
+    def __init__(self, title="", album="", track_num=0, lyric_file = ""):
         self.title = title
         self.album = album
         self.track_num = track_num
         self.lyric_file = lyric_file
-        self.lyrics = lyrics
 
     def getTitle(self):
         return self.title
@@ -50,14 +49,14 @@ class Song:
     def getTrackNum(self):
         return self.track_num
     def getLyrics(self):
-        return self.lyrics
+        return readFile(self.lyric_file)
     def getLyricFile(self):
         return self.lyric_file
 
     def occursInLyrics(self, word):
         counter = 0
-        for w in self.lyrics:
-            if word == w:
+        for w in self.getLyrics():
+            if word.lower() == w.lower():
                 counter += 1
         print(word + " occurs in " + self.getTitle() + " " + str(counter) + " times.")
         return counter
@@ -73,20 +72,21 @@ def readFile(fileName):
 #         self.assertEqual("1989", wonderland.getAlbum())
 
 if __name__ == "__main__":
-    wonderland = Song("Wonderland", "1989", 5, "wonderland_lyrics.txt", readFile("wonderland_lyrics.txt"))
-    new_romantics = Song("New Romantics", "1989", 2, "new_romantics_lyrics.txt", readFile("new_romantics_lyrics.txt"))
-    wildest_dreams = Song("Wildest Dreams", "1989", 1, "wildest_dreams_lyrics.txt", readFile("wildest_dreams_lyrics.txt"))
-    red = Song("Red", "Red", 1, "red_lyrics.txt", readFile("red_lyrics.txt"))
+    wonderland = Song("Wonderland", "1989", 5, "wonderland_lyrics.txt")
+    new_romantics = Song("New Romantics", "1989", 2, "new_romantics_lyrics.txt")
+    wildest_dreams = Song("Wildest Dreams", "1989", 1, "wildest_dreams_lyrics.txt")
+    red = Song("Red", "Red", 1, "red_lyrics.txt")
     disc = Discography([wonderland, new_romantics, wildest_dreams, red])
     print(disc.randomLyric())
-    # print(disc.numSongs()) #this should be true
-    print(disc.occursInDiscography("my"))
+    words = ["my", "and", "wonderland", "he", "wOndErlaNd", "rEd", "RED"]
+    print(disc.occursInDiscography(random.choice(words)))
     
     # Test.test_lyrics()
     # print(wonderland.album)
     # print(wonderland.getLyrics())
     # print(new_romantics.lyrics)
-    # print("wonderland occurs in " + wonderland.getTitle() + " " + str(wonderland.occursInLyrics("wonderland")) + " times")
+    # print("wonderland occurs in " + wonderland.getTitle() + " " + str
+    # (wonderland.occursInLyrics("wonderland")) + " times")
     # wonderland.occursInLyrics("wonderland")
     # wonderland.occursInLyrics("a")
     # new_romantics.occursInLyrics("a")
