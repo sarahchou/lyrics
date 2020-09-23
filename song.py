@@ -39,7 +39,6 @@ class Discography:
 
     def randomLyric(self):
         randomSong = random.choice(self.getSongs())
-        print("rando song title", randomSong.getTitle())
         fileObj = open(randomSong.getLyricFile(), "r")
         lyrics = fileObj.read().splitlines()
         fileObj.close()
@@ -67,6 +66,13 @@ class Album:
     def addSongToAlbum(self, song):
         if song.getAlbumTitle() == self.title and song not in self.songs:
             self.songs.append(song)
+    def randomLyricFromAlbum(self):        
+        randomSong = random.choice(self.getSongs())
+        fileObj = open(randomSong.getLyricFile(), "r")
+        lyrics = fileObj.read().splitlines()
+        fileObj.close()
+        print("random song from ", self.getTitle(), " ", str(randomSong.getTitle()))
+        return random.choice(lyrics)
 
 class Song:
     
@@ -96,6 +102,12 @@ class Song:
         if counter > 0:
             print(word + " occurs in " + self.getTitle() + " " + str(counter) + " times.")
         return counter
+    def randomLyricFromSong(self):
+        fileObj = open(self.getLyricFile(), "r")
+        lyrics = fileObj.read().splitlines()
+        fileObj.close()
+        print("random lyric from", self.getTitle())
+        return random.choice(lyrics)
 
 def readFile(fileName):
     fileObj = open(fileName, "r")
@@ -219,6 +231,7 @@ if __name__ == "__main__":
     words = ["my", "and", "wonderland", "he", "wOndErlaNd", "rEd", "RED", "heart", "cold"]
     print(disc.occursInDiscography(random.choice(words)))
     print(str(disc.numSongs()), "num songs")
+
 
 
 
