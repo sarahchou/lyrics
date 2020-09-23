@@ -96,7 +96,7 @@ def readFile(fileName):
     fileObj.close()
     return lyrics
 
-if __name__ == "__main__":
+def init_songs():
     wonderland = Song("Wonderland", "1989", 5, "wonderland_lyrics.txt")
     new_romantics = Song("New Romantics", "1989", 2, "new_romantics_lyrics.txt")
     wildest_dreams = Song("Wildest Dreams", "1989", 1, "wildest_dreams_lyrics.txt")
@@ -113,6 +113,11 @@ if __name__ == "__main__":
         for a in listofalbums:
             a.addSongToAlbum(s)
     disc = Discography([album_1989, album_red])
+    return disc
+
+
+if __name__ == "__main__":
+    disc = init_songs()
     print(disc.randomLyric())
     words = ["my", "and", "wonderland", "he", "wOndErlaNd", "rEd", "RED"]
     print(disc.occursInDiscography(random.choice(words)))
