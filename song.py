@@ -193,26 +193,41 @@ def init_songs():
     come_back_be_here = Song("Come Back...Be Here", album_red, 18, "discography/red/come_back_be_here_lyrics.txt")
     girl_at_home = Song("Girl At Home", album_red, 19, "discography/red/girl_at_home_lyrics.txt")
 
+    # 1989 songs
+    welcome_to_new_york = Song("Welcome to New York", album_1989, 1, "discography/1989/welcome_to_new_york_lyrics.txt")
+    blank_space = Song("Blank Space", album_1989, 2, "discography/1989/blank_space_lyrics.txt")
+    style = Song("Style", album_1989, 3, "discography/1989/style_lyrics.txt")
+    out_of_the_woods = Song("Out of the Woods", album_1989, 4, "discography/1989/out_of_the_woods_lyrics.txt")
+    all_you_had_to_do_was_stay = Song("All You Had To Do Was Stay", album_1989, 5, "discography/1989/all_you_had_to_do_was_stay_lyrics.txt")
+    shake_it_off = Song("Shake It Off", album_1989, 6, "discography/1989/shake_it_off_lyrics.txt")
+    i_wish_you_would = Song("I Wish You Would", album_1989, 7, "discography/1989/i_wish_you_would_lyrics.txt")
+    bad_blood = Song("Bad Blood", album_1989, 8, "discography/1989/bad_blood_lyrics.txt")
+    wildest_dreams = Song("Wildest Dreams", album_1989, 9, "discography/1989/wildest_dreams_lyrics.txt")
+    how_you_get_the_girl = Song("How You Get The Girl", album_1989, 10, "discography/1989/how_you_get_the_girl_lyrics.txt")
+    this_love = Song("This Love", album_1989, 11, "discography/1989/this_love_lyrics.txt")
+    i_know_places = Song("I Know Places", album_1989, 12, "discography/1989/i_know_places_lyrics.txt")
+    clean = Song("Clean", album_1989, 13, "discography/1989/clean_lyrics.txt")
+    wonderland = Song("Wonderland", album_1989, 14, "discography/1989/wonderland_lyrics.txt")
+    you_are_in_love = Song("You Are In Love", album_1989, 15, "discography/1989/you_are_in_love_lyrics.txt")
+    new_romantics = Song("New Romantics", album_1989, 16, "discography/1989/new_romantics_lyrics.txt")
 
 
-
-
-
-
-
-
-
-    wonderland = Song("Wonderland", album_1989, 5, "discography/1989/wonderland_lyrics.txt")
-    new_romantics = Song("New Romantics", album_1989, 2, "discography/1989/new_romantics_lyrics.txt")
-    wildest_dreams = Song("Wildest Dreams", album_1989, 1, "discography/1989/wildest_dreams_lyrics.txt")
-
-
-    listofsongs = [wonderland, wildest_dreams, new_romantics, red, tim_mcgraw, picture_to_burn, teardrops_on_my_guitar,
+    listofsongs = [tim_mcgraw, picture_to_burn, teardrops_on_my_guitar,
     a_place_in_this_world, cold_as_you, the_outside, tied_together_with_a_smile, stay_beautiful, shouldve_said_no,
     marys_song, our_song, im_only_me_when_im_with_you, invisible, a_perfectly_good_heart, mine, sparks_fly, back_to_december,
     speak_now, dear_john, mean, the_story_of_us, never_grow_up, enchanted, better_than_revenge, innocent,
     haunted, last_kiss, long_live, fearless, fifteen, love_story, hey_stephen, white_horse, you_belong_with_me, breathe,
-    tell_me_why, youre_not_sorry, the_way_i_loved_you, forever_and_always, the_best_day, change]
+    tell_me_why, youre_not_sorry, the_way_i_loved_you, forever_and_always, the_best_day, change,
+    state_of_grace, red, treacherous, i_knew_you_were_trouble, all_too_well, _22, i_almost_do,
+    we_are_never_ever_getting_back_together, stay_stay_stay, the_last_time, holy_ground, sad_beautiful_tragic,
+    the_lucky_one, everything_has_changed, starlight, begin_again, the_moment_i_knew, come_back_be_here,
+    girl_at_home,
+    welcome_to_new_york, blank_space,style, out_of_the_woods, all_you_had_to_do_was_stay, shake_it_off,
+    i_wish_you_would, bad_blood, how_you_get_the_girl, this_love, i_know_places,clean,you_are_in_love,
+    wonderland, wildest_dreams, new_romantics]
+
+
+
     listofalbums = [album_taylorswift, album_fearless, album_speaknow, album_red, album_1989, album_reputation,
     album_lover, album_folklore]
     for s in listofsongs:
