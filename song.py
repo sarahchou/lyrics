@@ -211,6 +211,31 @@ def init_songs():
     you_are_in_love = Song("You Are In Love", album_1989, 15, "discography/1989/you_are_in_love_lyrics.txt")
     new_romantics = Song("New Romantics", album_1989, 16, "discography/1989/new_romantics_lyrics.txt")
 
+    # reputation songs
+    ready_for_it = Song("...Ready For It?", album_reputation, 1, "discography/reputation/ready_for_it_lyrics.txt")
+    end_game = Song("End Game", album_reputation, 2, "discography/reputation/end_game_lyrics.txt")
+    i_did_something_bad = Song("I Did Something Bad", album_reputation, 3, "discography/reputation/i_did_something_bad_lyrics.txt")
+    dont_blame_me = Song("Don't Blame Me", album_reputation, 4, "discography/reputation/dont_blame_me_lyrics.txt")
+    delicate = Song("Delicate", album_reputation, 5, "discography/reputation/delicate_lyrics.txt")
+    look_what_you_made_me_do = Song("Look What You Made Me Do", album_reputation, 6, 
+    "discography/reputation/look_what_you_made_me_do_lyrics.txt")
+    so_it_goes = Song("So It Goes...", album_reputation, 7, "discography/reputation/so_it_goes_lyrics.txt")
+    gorgeous = Song("Gorgeous", album_reputation, 8, "discography/reputation/gorgeous_lyrics.txt")
+    getaway_car = Song("Getaway Car", album_reputation, 9, "discography/reputation/getaway_car_lyrics.txt")
+    king_of_my_heart = Song("King of my Heart", album_reputation, 10, "discography/reputation/king_of_my_heart_lyrics.txt")
+    dancing_with_our_hands_tied = Song("Dancing With Our Hands Tied", album_reputation, 11, 
+    "discography/reputation/dancing_with_our_hands_tied_lyrics.txt")
+    dress = Song("Dress", album_reputation, 12, "discography/reputation/dress_lyrics.txt")
+    this_is_why_we_cant_have_nice_things = Song("This Is Why We Can't Have Nice Things", album_reputation, 13,
+     "discography/reputation/this_is_why_we_cant_have_nice_things_lyrics.txt")
+    call_it_what_you_want = Song("Call It What You Want", album_reputation, 14, "discography/reputation/call_it_what_you_want_lyrics.txt")
+    new_years_day = Song("New Year's Day", album_reputation, 15, "discography/reputation/new_years_day_lyrics.txt")
+
+    
+    
+    
+    # lover songs
+    # folklore songs
 
     listofsongs = [tim_mcgraw, picture_to_burn, teardrops_on_my_guitar,
     a_place_in_this_world, cold_as_you, the_outside, tied_together_with_a_smile, stay_beautiful, shouldve_said_no,
@@ -224,7 +249,10 @@ def init_songs():
     girl_at_home,
     welcome_to_new_york, blank_space,style, out_of_the_woods, all_you_had_to_do_was_stay, shake_it_off,
     i_wish_you_would, bad_blood, how_you_get_the_girl, this_love, i_know_places,clean,you_are_in_love,
-    wonderland, wildest_dreams, new_romantics]
+    wonderland, wildest_dreams, new_romantics,
+    ready_for_it, end_game, i_did_something_bad, dont_blame_me, delicate, look_what_you_made_me_do,
+    so_it_goes, gorgeous, getaway_car, king_of_my_heart, dancing_with_our_hands_tied, dress, this_is_why_we_cant_have_nice_things,
+    call_it_what_you_want, new_years_day]
 
 
 
