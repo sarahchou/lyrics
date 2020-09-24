@@ -44,6 +44,15 @@ class Discography:
         fileObj.close()
         print("random song ", str(randomSong.getTitle()))
         return random.choice(lyrics)
+    def allSongsTrackNum(self, track_num):
+        allTracks = []
+        for s in self.getSongs():
+            if s.getTrackNum() == track_num:
+                allTracks.append(s)
+                print(s.getTitle(), "is track", track_num, "from ", s.getAlbumTitle())
+        
+        return allTracks
+
 
 class Album:
     def __init__(self, title, songs):
@@ -319,6 +328,10 @@ if __name__ == "__main__":
     words = ["cold", "lakes", "red", "peace", "woman", "girl"]
     print(disc.occursInDiscography(random.choice(words)))
     print(str(disc.numSongs()), "num songs")
+    tracks = []
+    for i in range(1, 20):
+        tracks.append(i)
+    disc.allSongsTrackNum(random.choice(tracks))
 
 
 
