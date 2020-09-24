@@ -316,7 +316,7 @@ def init_songs():
 if __name__ == "__main__":
     disc = init_songs()
     print(disc.randomLyric())
-    words = ["my", "and", "wonderland", "he", "wOndErlaNd", "rEd", "RED", "heart", "cold"]
+    words = ["cold", "lakes", "red", "peace", "woman", "girl"]
     print(disc.occursInDiscography(random.choice(words)))
     print(str(disc.numSongs()), "num songs")
 
