@@ -231,10 +231,32 @@ def init_songs():
     call_it_what_you_want = Song("Call It What You Want", album_reputation, 14, "discography/reputation/call_it_what_you_want_lyrics.txt")
     new_years_day = Song("New Year's Day", album_reputation, 15, "discography/reputation/new_years_day_lyrics.txt")
 
-    
-    
-    
     # lover songs
+    i_forgot_that_you_existed = Song("I Forgot That You Existed", album_lover, 1, "discography/lover/i_forgot_that_you_existed_lyrics.txt")
+    cruel_summer = Song("Cruel Summer", album_lover, 2, "discography/lover/cruel_summer_lyrics.txt")
+    lover = Song("Lover", album_lover, 3, "discography/lover/lover_lyrics.txt")
+    the_man = Song("The Man", album_lover, 4, "discography/lover/the_man_lyrics.txt")
+    the_archer = Song("The Archer", album_lover, 5, "discography/lover/the_archer_lyrics.txt")
+    i_think_he_knows = Song("I Think He Knows", album_lover, 6, "discography/lover/i_think_he_knows_lyrics.txt")
+    miss_americana_and_the_heartbreak_prince = Song("Miss Americana & The Heartbreak Prince", album_lover, 
+    7, "discography/lover/miss_americana_and_the_heartbreak_prince_lyrics.txt")
+    paper_rings = Song("Paper Rings", album_lover, 8, "discography/lover/paper_rings_lyrics.txt")
+    cornelia_street = Song("Cornelia Street", album_lover, 9, "discography/lover/cornelia_street_lyrics.txt")
+    death_by_a_thousand_cuts = Song("Death by a Thousand Cuts", album_lover, 10, 
+    "discography/lover/death_by_a_thousand_cuts_lyrics.txt")
+    london_boy = Song("London Boy", album_lover, 11, "discography/lover/london_boy_lyrics.txt")
+    soon_youll_get_better = Song("Soon You'll Get Better", album_lover, 12, 
+    "discography/lover/soon_youll_get_better_lyrics.txt")
+    false_god = Song("False God", album_lover, 13, "discography/lover/false_god_lyrics.txt")
+    you_need_to_calm_down = Song("You Need To Calm Down", album_lover, 14, 
+    "discography/lover/you_need_to_calm_down_lyrics.txt")
+    afterglow = Song("Afterglow", album_lover, 15, "discography/lover/afterglow_lyrics.txt")
+    me = Song("ME!", album_lover, 16, "discography/lover/me_lyrics.txt")
+    its_nice_to_have_a_frend = Song("It's Nice To Have A Friend", album_lover, 
+    17, "discography/lover/its_nice_to_have_a_frend_lyrics.txt")
+    daylight = Song("Daylight", album_lover, 18, "discography/lover/daylight_lyrics.txt")
+
+
     # folklore songs
 
     listofsongs = [tim_mcgraw, picture_to_burn, teardrops_on_my_guitar,
@@ -252,7 +274,10 @@ def init_songs():
     wonderland, wildest_dreams, new_romantics,
     ready_for_it, end_game, i_did_something_bad, dont_blame_me, delicate, look_what_you_made_me_do,
     so_it_goes, gorgeous, getaway_car, king_of_my_heart, dancing_with_our_hands_tied, dress, this_is_why_we_cant_have_nice_things,
-    call_it_what_you_want, new_years_day]
+    call_it_what_you_want, new_years_day,
+    i_forgot_that_you_existed, cruel_summer, lover, the_man, the_archer, i_think_he_knows, miss_americana_and_the_heartbreak_prince,
+    paper_rings, cornelia_street, death_by_a_thousand_cuts, london_boy, soon_youll_get_better, false_god, you_need_to_calm_down,
+    afterglow, me, its_nice_to_have_a_frend, daylight]
 
 
 
