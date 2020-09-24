@@ -258,6 +258,24 @@ def init_songs():
 
 
     # folklore songs
+    the_1 = Song("The 1", album_folklore, 1, "discography/folklore/the_1_lyrics.txt")
+    cardigan = Song("cardigan", album_folklore, 2, "discography/folklore/cardigan_lyrics.txt")
+    the_last_great_american_dynasty = Song("the last great american dynasty", album_folklore, 3, 
+    "discography/folklore/the_last_great_american_dynasty_lyrics.txt")
+    exile = Song("exile", album_folklore, 4, "discography/folklore/exile_lyrics.txt")
+    my_tears_ricochet = Song("my tears ricochet", album_folklore, 5, "discography/folklore/my_tears_ricochet_lyrics.txt")
+    mirrorball = Song("mirrorball", album_folklore, 6, "discography/folklore/mirrorball_lyrics.txt")
+    seven = Song("seven", album_folklore, 7, "discography/folklore/seven_lyrics.txt")
+    august = Song("august", album_folklore, 8, "discography/folklore/august_lyrics.txt")
+    this_is_me_trying = Song("this is my trying", album_folklore, 9, "discography/folklore/this_is_me_trying_lyrics.txt")
+    illicit_affairs = Song("illicit affairs", album_folklore,  10, "discography/folklore/illicit_affairs_lyrics.txt")
+    invisible_string = Song("invisible string", album_folklore, 11, "discography/folklore/invisible_string_lyrics.txt")
+    mad_woman = Song("mad woman", album_folklore, 12, "discography/folklore/mad_woman_lyrics.txt")
+    epiphany = Song("epiphany", album_folklore, 13, "discography/folklore/epiphany_lyrics.txt")
+    betty = Song("betty", album_folklore, 14, "discography/folklore/betty_lyrics.txt")
+    peace = Song("peace", album_folklore, 15, "discography/folklore/peace_lyrics.txt")
+    hoax = Song("hoax", album_folklore, 16, "discography/folklore/hoax_lyrics.txt")
+    the_lakes = Song("the lakes", album_folklore, 17, "discography/folklore/the_lakes_lyrics.txt")
 
     listofsongs = [tim_mcgraw, picture_to_burn, teardrops_on_my_guitar,
     a_place_in_this_world, cold_as_you, the_outside, tied_together_with_a_smile, stay_beautiful, shouldve_said_no,
@@ -277,7 +295,9 @@ def init_songs():
     call_it_what_you_want, new_years_day,
     i_forgot_that_you_existed, cruel_summer, lover, the_man, the_archer, i_think_he_knows, miss_americana_and_the_heartbreak_prince,
     paper_rings, cornelia_street, death_by_a_thousand_cuts, london_boy, soon_youll_get_better, false_god, you_need_to_calm_down,
-    afterglow, me, its_nice_to_have_a_frend, daylight]
+    afterglow, me, its_nice_to_have_a_frend, daylight,
+    the_1, cardigan, the_last_great_american_dynasty, exile, my_tears_ricochet, mirrorball, seven, august, this_is_me_trying,
+    illicit_affairs, invisible_string, mad_woman, epiphany, betty, peace, hoax, the_lakes]
 
 
 
