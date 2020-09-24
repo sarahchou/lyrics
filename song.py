@@ -50,9 +50,14 @@ class Discography:
             if s.getTrackNum() == track_num:
                 allTracks.append(s)
                 print(s.getTitle(), "is track", track_num, "from ", s.getAlbumTitle())
-        
         return allTracks
-
+    def allSongsStartWith(self, letter):
+        allSongs = []
+        for s in self.getSongs():
+            if s.songStartsWith(letter):
+                allSongs.append(s)
+                print(s.getTitle(), "starts with", letter)
+        return allSongs
 
 class Album:
     def __init__(self, title, songs):
@@ -117,6 +122,13 @@ class Song:
         fileObj.close()
         print("random lyric from", self.getTitle())
         return random.choice(lyrics)
+
+    def songStartsWith(self, letter):
+        return self.getTitle()[0].lower() == letter.lower()
+
+    def titleLength(self):
+        print("title length ", len(self.getTitle().split(" ")))
+        return len(self.getTitle().split(" "))
 
 def readFile(fileName):
     fileObj = open(fileName, "r")
@@ -332,6 +344,7 @@ if __name__ == "__main__":
     for i in range(1, 20):
         tracks.append(i)
     disc.allSongsTrackNum(random.choice(tracks))
+    disc.allSongsStartWith('b')
 
 
 
