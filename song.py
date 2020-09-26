@@ -42,7 +42,7 @@ class Discography:
         fileObj = open(randomSong.getLyricFile(), "r")
         lyrics = fileObj.read().splitlines()
         fileObj.close()
-        print("random song ", str(randomSong.getTitle()))
+        print("A random lyric was chosen from the song", str(randomSong.getTitle()), "from the album", randomSong.getAlbumTitle() + ":")
         return random.choice(lyrics)
 
     def allSongsTrackNum(self, track_num):
@@ -346,15 +346,15 @@ if __name__ == "__main__":
     disc = init_songs()
     print(disc.randomLyric())
     words = ["cold", "lakes", "red", "peace", "woman", "girl"]
-    print(disc.occursInDiscography(random.choice(words)))
-    print(str(disc.numSongs()), "num songs")
-    tracks = []
-    for i in range(1, 20):
-        tracks.append(i)
-    disc.allSongsTrackNum(random.choice(tracks))
-    disc.allSongsStartWith('b')
-    disc.allSongsTitleLength(1)
-    disc.allSongsTitleLength(5)
+    # print(disc.occursInDiscography(random.choice(words)))
+    # print(str(disc.numSongs()), "num songs")
+    # tracks = []
+    # for i in range(1, 20):
+    #     tracks.append(i)
+    # disc.allSongsTrackNum(random.choice(tracks))
+    # disc.allSongsStartWith('b')
+    # disc.allSongsTitleLength(1)
+    # disc.allSongsTitleLength(5)
 
 
 
