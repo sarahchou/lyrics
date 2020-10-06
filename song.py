@@ -51,6 +51,8 @@ class Discography:
             if s.getTrackNum() == track_num:
                 allTracks.append(s)
                 print(s.getTitle(), "is track", track_num, "from ", s.getAlbumTitle())
+        if len(allTracks) == 0:
+            print("There are no albums with", track_num, "songs")
         return allTracks
 
     def allSongsStartWith(self, letter):
@@ -355,6 +357,12 @@ if __name__ == "__main__":
     # disc.allSongsStartWith('b')
     # disc.allSongsTitleLength(1)
     # disc.allSongsTitleLength(5)
+    # for i in range(1,18):
+    #     disc.allSongsTrackNum(i)
+    # disc.allSongsTrackNum(22)
+
+    disc.occursInDiscography("rainbow")
+
 
 
 
