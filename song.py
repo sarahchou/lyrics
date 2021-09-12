@@ -62,7 +62,7 @@ class Song:
         print("random lyric from: ", self.getTitle())
         return random.choice(lyrics)
 
-    def wordInLyric2(self, word, lyric):
+    def wordInLyric(self, word, lyric):
         for w in lyric.split(" "):
             if word.lower() == w.lower():
                 return True

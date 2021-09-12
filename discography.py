@@ -62,7 +62,7 @@ class Discography:
         lyricsWithWord = {}
         for s in self.getSongs():
             if s.occursInLyrics(word):
-                lyricsWithWord[s.getTitle()] = s.wordInLyric(word)
+                lyricsWithWord[s.getTitle()] = s.wordInSong(word)
         for l, v in lyricsWithWord.items():
             print(l + ": " + str(v))
         return lyricsWithWord
