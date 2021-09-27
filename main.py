@@ -215,9 +215,10 @@ class song_machine:
         # disc.allSongsTitleLength(5)
         # for i in range(1,18):
         #     disc.allSongsTrackNum(i)
-        disc.allSongsTrackNum(22)
-        #disc.occursInDiscography("light")
-        disc.wordInDiscography("light")
+        #disc.allSongsTrackNum(22)
+        #disc.occursInDiscography("page")
+        disc.wordInDiscography("moon")
+        # for some reason does not include pages from DBATC because it is pages? so do some character matching with punctuation
 
 
 
