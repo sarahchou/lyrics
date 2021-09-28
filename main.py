@@ -42,6 +42,19 @@ class song_machine:
         forever_and_always = Song("Forever & Always", album_fearless,11, "discography/fearless/forever_and_always_lyrics.txt")
         the_best_day = Song("The Best Day", album_fearless, 12, "discography/fearless/the_best_day_lyrics.txt")
         change = Song("Change", album_fearless, 13, "discography/fearless/change_lyrics.txt")
+        jump_then_fall = Song("Jump Then Fall", album_fearless, 14, "discography/fearless/jump_then_fall_lyrics.txt")
+        untouchable = Song("Untouchable", album_fearless, 15, "discography/fearless/untouchable_lyrics.txt")
+        forever_and_always_piano = Song("Forever And Always (Piano Version)", album_fearless, 16, "discography/fearless/forever_and_always_lyrics.txt")
+        come_in_with_the_rain = Song("Come In With The Rain", album_fearless, 17, "discography/fearless/come_in_with_the_rain_lyrics.txt")
+        superstar = Song("Superstar", album_fearless, 18, "discography/fearless/superstar_lyrics.txt")
+        the_other_side_of_the_door = Song("The Other Side of the Door", album_fearless, 19, "discography/fearless/the_other_side_of_the_door_lyrics.txt")
+        today_was_a_fairytale = Song("Today Was a Fairytale", album_fearless, 20, "discography/fearless/today_was_a_fairytale_lyrics.txt")
+        you_all_over_me = Song("You All Over Me", album_fearless, 21, "discography/fearless/you_all_over_me_lyrics.txt")
+        mr_perfectly_fine = Song("Mr.Perfectly Fine", album_fearless, 22, "discography/fearless/mr_perfectly_fine_lyrics.txt")
+        we_were_happy = Song("We Were Happy", album_fearless, 23, "discography/fearless/we_were_happy_lyrics.txt")
+        thats_when = Song("That's When", album_fearless, 24, "discography/fearless/thats_when_lyrics.txt")
+        dont_you = Song("Don't You", album_fearless, 25, "discography/fearless/dont_you_lyrics.txt")
+        bye_bye_baby = Song("Bye Bye Baby", album_fearless, 26, "discography/fearless/bye_bye_baby_lyrics.txt")
 
         # speak now songs
         mine = Song("Mine", album_speaknow, 1, "discography/speaknow/mine_lyrics.txt")
@@ -170,7 +183,9 @@ class song_machine:
         marys_song, our_song, im_only_me_when_im_with_you, invisible, a_perfectly_good_heart, mine, sparks_fly, back_to_december,
         speak_now, dear_john, mean, the_story_of_us, never_grow_up, enchanted, better_than_revenge, innocent,
         haunted, last_kiss, long_live, fearless, fifteen, love_story, hey_stephen, white_horse, you_belong_with_me, breathe,
-        tell_me_why, youre_not_sorry, the_way_i_loved_you, forever_and_always, the_best_day, change,
+        tell_me_why, youre_not_sorry, the_way_i_loved_you, forever_and_always, the_best_day, change, come_in_with_the_rain, jump_then_fall, superstar,
+                       the_other_side_of_the_door, today_was_a_fairytale, untouchable, mr_perfectly_fine, dont_you, bye_bye_baby, thats_when, we_were_happy, you_all_over_me,
+                       forever_and_always_piano,
         state_of_grace, red, treacherous, i_knew_you_were_trouble, all_too_well, _22, i_almost_do,
         we_are_never_ever_getting_back_together, stay_stay_stay, the_last_time, holy_ground, sad_beautiful_tragic,
         the_lucky_one, everything_has_changed, starlight, begin_again, the_moment_i_knew, come_back_be_here,
@@ -217,7 +232,7 @@ class song_machine:
         #     disc.allSongsTrackNum(i)
         #disc.allSongsTrackNum(22)
         #disc.occursInDiscography("page")
-        disc.wordInDiscography("moon")
+        disc.wordInDiscography("happy")
         # for some reason does not include pages from DBATC because it is pages? so do some character matching with punctuation
 
 
